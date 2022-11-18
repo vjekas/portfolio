@@ -20,6 +20,7 @@ body {
    background-image: url(images/portret5.jpg);
    background-size: cover;
    background-position: center;
+   /* background-attachment: fixed; */ /* fiksira pozadinu kad se skroluje */
 }
 
 .container {
@@ -173,7 +174,7 @@ nav ul li a:hover::after {
 .services-list {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   grid-gap: 40px;
+   gap: 40px;
    margin-top: 50px;
 }
 
@@ -384,8 +385,8 @@ form .btn2 {
 }
 
 /* --------------- Css for small screen --------------- */
-nav .fa-xmark,
-.fa-bars {
+nav .fa-bars,
+.fa-xmark {
    display: none;
 }
 
@@ -405,8 +406,8 @@ nav .fa-xmark,
       margin-top: 0;
    }
 
-   nav .fa-xmark,
-   .fa-bars {
+   nav .fa-bars,
+   .fa-xmark {
       display: block;
       font-size: 25px;
    }
@@ -429,7 +430,7 @@ nav .fa-xmark,
    }
 
    nav ul .fa-xmark {
-      font-size: 32px;
+      /* font-size: 32px; */
       position: absolute;
       top: 25px;
       left: 25px;
