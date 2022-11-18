@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Personal Portfolio Website</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://kit.fontawesome.com/785533e6df.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <!--------------- Header --------------->
+      <div id="header">
+         <div class="container">
+            <nav>
+               <img src="images/logo.png" class="logo" />
+               <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+               <p>UI/UX Designer</p>
+               <h1>Hi, I'm <span>Kevin</span><br />Djurant From Leskovac</h1>
+            </div>
+         </div>
+      </div>
+
+      <!--------------- About --------------->
+      <div id="about">
+         <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                  <img src="images/portret8.jpg" />
+               </div>
+               <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p class="p-about">
+                     Creative and Skilled Front End Developer with 3 years experience, in Web
+                     development and maintaining responsive websites in the recruiting industry.
+                     Proficient in HTML, CSS, jQuery, JavaScript, and React; in addition to modern
+                     libraries and frameworks. I also have strong skills and expertise in usability
+                     and possess working knowledge of Adobe Photoshop, Lightroom & Sketch.
+                  </p>
+
+                  <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                     <ul>
+                        <li><span>UI/UX</span><br />Designin Web/App interfaces</li>
+                        <li><span>Web Development</span><br />Web app Development</li>
+                        <li><span>App Development</span><br />Building Android/iOS apps</li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                     <ul>
+                        <li><span>2021 - Current</span><br />UI/UX Design Training at Levi9</li>
+                        <li><span>2019 - 2021</span><br />Team lead at Vega IT</li>
+                        <li><span>2017 - 2019</span><br />UI/UX Design Executive at Synechron</li>
+                        <li><span>2016 - 2017</span><br />Internship at Execom</li>
+                     </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                     <ul>
+                        <li><span>2016</span><br />UI/UX Design Training at FTN Informatika</li>
+                        <li><span>2016</span><br />Web app Development FTN Informatika</li>
+                        <li><span>2014</span><br />Softverske i informacione tehnologije at FTN</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--------------- Services --------------->
+      <div id="services">
+         <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               <div>
+                  <i class="fa-solid fa-code"></i>
+                  <h2>Web Design</h2>
+                  <p>
+                     Web design is a complex field and there are a lot of skills that you need to
+                     master. But, if you`re passionate about it and are always looking to learn new
+                     things, then you`ll be successful.
+                  </p>
+                  <a href="#">learn more</a>
+               </div>
+
+               <div>
+                  <i class="fa-solid fa-crop-simple"></i>
+                  <h2>UI/UX Design</h2>
+                  <p>
+                     UI design focuses on the look and feel of the app, while UX design focuses on
+                     the user's experience while using the app. Both UI and UX design are important
+                     in creating software applications that are easy to use and enjoyable to use.
+                  </p>
+                  <a href="#">learn more</a>
+               </div>
+
+               <div>
+                  <i class="fa-brands fa-app-store"></i>
+                  <h2>App Design</h2>
+                  <p>
+                     A well-designed app can make a big difference in the lives of its users, and it
+                     can also be a huge financial success.
+                  </p>
+                  <a href="#">learn more</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--------------- Portfolio --------------->
+      <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+               <div class="work">
+                  <img src="images/work-1.png" />
+                  <div class="layer">
+                     <h3>Social Media App</h3>
+                     <p>
+                        The app connects you to the talented people around the world. Download it
+                        from play store.
+                     </p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+               </div>
+               <div class="work">
+                  <img src="images/work-2.png" />
+                  <div class="layer">
+                     <h3>Music App</h3>
+                     <p>
+                        These applications allow people to listen to their favorite music whenever
+                        they want and wherever they are.
+                     </p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+               </div>
+               <div class="work">
+                  <img src="images/work-3.png" />
+                  <div class="layer">
+                     <h3>Online Shopping App</h3>
+                     <p>
+                        The online shopping application is a great way to shop for items online. It
+                        is very convenient and easy to use.
+                     </p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+         </div>
+      </div>
+
+      <!--------------- Contact --------------->
+      <div id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-envelope"></i>kevin.djurant@google.com</p>
+                  <p><i class="fa-solid fa-mobile"></i>+38165808080</p>
+                  <div class="social-icons">
+                     <a href="https://www.instagram.com/vjekas.dev/"
+                        ><i class="fa-brands fa-instagram"></i
+                     ></a>
+                     <a href="https://www.meetup.com/members/294552761/"
+                        ><i class="fa-brands fa-meetup"></i
+                     ></a>
+                     <a href="https://www.youtube.com/user/vjeka"
+                        ><i class="fa-brands fa-youtube"></i
+                     ></a>
+                     <a href="https://www.pinterest.co.uk/VjekasDev/"
+                        ><i class="fa-brands fa-pinterest"></i
+                     ></a>
+                  </div>
+                  <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+               </div>
+               <div class="contact-right">
+                  <form>
+                     <input type="text" name="Name" placeholder="Your Name" required />
+                     <input type="email" name="email" placeholder="Your Email" required />
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <p><i class="fa-regular fa-copyright"> 2022</i>Vjekas<span>Dev</span></p>
+         </div>
+      </div>
+
+      <script>
+         let tablinks = document.getElementsByClassName("tab-links");
+         let tabcontents = document.getElementsByClassName("tab-contents");
+
+         function opentab(tabname) {
+            for (tablink of tablinks) {
+               tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+               tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+      </script>
+
+      <script>
+         let sidemenu = document.getElementById("sidemenu");
+
+         function openmenu() {
+            sidemenu.style.right = "0";
+         }
+
+         function closemenu() {
+            sidemenu.style.right = "-160px";
+         }
+      </script>
+   </body>
+</html>
